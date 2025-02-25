@@ -1,0 +1,38 @@
+const Mybtn = document.querySelectorAll(".Mybtn");
+
+Mybtn.forEach(ele => {
+    ele.style.backgroundColor = "yellow";
+    ele.textContent += "🤞";
+});
+
+//to make moveover , mouseout and click
+
+Mybtn.forEach(ele =>{
+    ele.addEventListener("click",event =>{
+        event.target.style.backgroundColor = "lightgreen";
+    })
+})
+
+Mybtn.forEach(ele =>{
+    ele.addEventListener("mouseover",event =>{
+        event.target.style.backgroundColor = "lightblue";
+    })
+})
+
+Mybtn.forEach(ele =>{
+    ele.addEventListener("mouseout",event =>{
+        event.target.style.backgroundColor = "yellow";
+    })
+})
+
+let btn = document.querySelectorAll(".Mybtn");
+// to create the html element 
+const newbtn = document.createElement("button");
+newbtn.textContent="Button 5";
+newbtn.classList.add("Mybtn");
+document.body.appendChild(newbtn);
+
+console.log(Mybtn);
+
+btn = document.querySelectorAll(".Mybtn");
+console.log(btn);
